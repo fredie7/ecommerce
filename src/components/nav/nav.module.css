@@ -1,0 +1,112 @@
+.Navbar {
+    height: 12vh;
+    background-color: brown;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    align-items: center;
+    top: 0;
+}
+.Toggle{
+    color: white;
+    display: flex;
+    align-items: center;
+    display: none;
+}
+.SearchProduct{
+    width: 500px;
+    border-radius: 10px;
+}
+.SearchProduct input{
+    border-radius: 10px;
+    width: 100%;
+    padding: 10px;
+    font-size: 17px;
+}
+.NavTools {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    font-weight: lighter;
+    width: 200px;
+    /* background-color: rgb(114, 141, 114); */
+}
+
+.NavTools a{
+    cursor: pointer;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.Overlay {
+    display: none;
+}
+.Brand {
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    width: 170px;
+    /* background-color: rgb(114, 141, 114); */
+    font-size: 20px;
+    font-weight: lighter;
+}
+.Cart{
+    color: #fff;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .Navbar{
+        /* background-color: red; */
+    }
+    .SearchProduct {
+        display: none;
+    }
+    .Brand{
+        /* display: none; */
+    }
+    .NavTools{
+        position: absolute;
+        left: 0;
+        top: 12vh;
+        flex-direction: column;
+        align-items: center;
+        height: 88vh;
+        width: 50%;
+        background-color: rgb(52, 71, 52);
+        justify-content: space-evenly;
+        transform: translateX(-100%);
+        transition: transform 0.5 ease-in;
+        display: none;
+    }
+    .NavTools a{
+        font-size: 32px;
+    }
+    .Active {
+        transform: translateX(0);
+    }
+    .Toggle {
+        display: block;
+    }
+    .Overlay {
+        position: absolute;
+        top: 13vh;
+        left: 7.5px;
+        height: 88vh;
+        width: 50%;
+        background-color: #f1f1f1;
+        overflow: hidden;
+        display: block;
+        /* cursor: pointer; */
+        /* transform: translateX(7.5px);
+        transition: transform 0.5s ease-in; */
+    }
+    .Signup, .Signin, .Signout {
+        text-align: center;
+        font-size: 22px;
+        margin-top: 40px;
+    }
+} 

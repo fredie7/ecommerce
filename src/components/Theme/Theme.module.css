@@ -1,0 +1,15 @@
+.Theme {
+    top: 12vh;
+    height: 68vh;
+    width: 100%;
+    /* background: red; */
+    position: relative;
+    background-color: black;
+}
+.Theme img {
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    background-position: cover;
+    object-fit: cover;
+}

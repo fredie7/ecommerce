@@ -1,0 +1,106 @@
+.Form {
+    width: 100%;
+    z-index: 10;
+}
+.Form input {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    font-size: 18px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    border: none;
+}
+.Form input:focus{
+    background-color: rgb(218, 236, 236);
+    outline: none;
+}
+.Form input[type=submit]{
+    cursor: pointer;
+    border-color: rgb(218, 211, 211);
+    border-width: 0.6ch;
+    border-radius: 3px;
+    font-size: 30px;
+    font-weight: lighter;
+    display: block;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    flex-grow: 1;
+    box-shadow: 5px 10px 20px rgb(161, 140, 141) inset;
+    outline: none;
+    margin-top: 5px;
+}
+.Text {
+    width: 100%;
+    display: block;
+    padding: 14px;
+    font-size: 18px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    border: none;
+    height: 140px;
+}
+.Text:focus{
+    background-color: rgb(218, 236, 236);
+    outline: none;
+}
+.AdminWrapper {
+    position: absolute;
+    top: 14vh;
+    height: 86vh;
+    width: 100%;
+    background-color: rgb(231, 226, 226);
+}
+.AdminWrapper h4 {
+    text-transform: uppercase;
+    text-align: center;
+    font-family: cursive;
+}
+
+.ProductTable {
+    margin-top: 50px;
+}
+
+.Tab {
+    margin-top: 20px;
+    border: 1px solid black;
+    width: 100%;
+    overflow: hidden;
+}
+.Tab .Pix {
+    height: 100px;
+    width: 100px;
+}
+.Tab .Num {
+    height: 100px;
+    text-align: center;
+}
+.Pix img {
+    height: 100%;
+    width: 100%;
+}
+.Row :nth-child(even){
+    background-color: #f2f2f2;
+}
+.Row :nth-child(odd){
+    background-color: #f1f3f1;
+}
+.Tab th {
+    font-size: 23px;
+    font-family: cursive;
+    text-transform: capitalize;
+}
+.Tab td {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 23px;
+}
+.Mab {
+    position: fixed;
+    z-index: 0;
+    height: 100vh;
+    width: 100vw;
+    top: 12vh;
+    overflow: hidden;
+    left: 0;
+}

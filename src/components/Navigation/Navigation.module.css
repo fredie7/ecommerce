@@ -1,0 +1,143 @@
+.Navbar {
+    height: 12vh;
+    background-color: rgb(97, 26, 26);
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.Nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    position: absolute;
+    top: 40%;
+}
+.Tog{
+    cursor: pointer;
+    flex-basis: 5%;
+    display: none;
+}
+.Logo{
+    display: block;
+    /* background-color: rebeccapurple; */
+    flex-basis: 5%;
+    width: 67px;
+    height: 43px;
+    border-radius: 15px;
+}
+.Logo img{
+    width: 100%;
+    height: 100%;
+}
+
+.ToggleBar {
+    height: 7px;
+    background-color: white;
+    width: 40px;
+    margin-top: 5px;
+}
+.Search {
+    flex-basis: 50%;
+    
+}
+.Search input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+}
+.Sign {
+    display: flex;
+    flex-basis: 20%;
+    color: white;
+    font-size: 24px;
+    justify-content: space-around;
+    cursor: pointer;
+}
+.Sign .Signup{
+    flex-basis: 20%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: smaller;
+}
+.Sign .Signin{
+    flex-basis: 20%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: smaller;
+}
+.Sign .Welcome{
+    flex-basis: 40%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: smaller;
+    width: 100%;
+}
+.Cart {
+    flex-basis: 10%;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+.SideBar {
+    position: fixed;
+    z-index: 11;
+    top: 13vh;
+    left: 0;
+    height: 88vh;
+    width: 50%;
+    background-color: #f1f1f1;
+    overflow: hidden;
+    display: block;
+    overflow-x: hidden;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+}
+.Log {
+    flex-basis: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.Logg {
+    flex-basis: 75%;
+}
+.Log .Signup {
+    flex-basis: 32%;
+    font-size: 24px;
+    letter-spacing: 0.04em;
+}
+.Log .Signin {
+    flex-basis: 32%;
+    font-size: 24px;
+    letter-spacing: 0.04em;
+}
+.Log .Signout {
+    flex-basis: 32%;
+    font-size: 24px;
+    letter-spacing: 0.04em;
+}
+
+@media screen and (max-width: 768px) {
+    .Sign {
+        display: none;
+    }
+    .Search {
+        flex-basis: 58%;
+    }
+    .Cart {
+        flex-basis: 10%;
+    }
+    .Toggle .Tog{
+        flex-basis: 10%;
+        display: block;
+    }
+    .Toggle .Logo{
+        display: none;
+    }
+        
+}

@@ -1,0 +1,67 @@
+.UserProfile {
+    position: absolute;
+    top: 12vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 88vh;
+    width: 100%;
+    background-color: #f1f1f1;
+}
+.UserProfile input{
+    display: block;
+    width: 100%;
+    padding: 20px;
+    font-size: 26px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    border: none;
+}
+.UserProfile input:focus{
+    background-color: rgb(218, 236, 236);
+    outline: none;
+}
+.UserProfile button{
+    cursor: pointer;
+    border-color: rgb(218, 211, 211);
+    border-width: 0.6ch;
+    border-radius: 3px;
+    font-size: 30px;
+    font-weight: lighter;
+    display: block;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    flex-grow: 1;
+    box-shadow: 5px 10px 20px rgb(161, 140, 141) inset;
+    outline: none;
+}
+.UserProfile form{
+    width: 90%;
+    z-index: 10;
+}
+.UserProfile input::placeholder{
+    color: rgb(192,192,192);
+}
+.Mab {
+    position: fixed;
+    z-index: 0;
+    height: 100vh;
+    width: 100vw;
+    top: 12vh;
+    overflow: hidden;
+    left: 0;
+}
+
+@media (min-width: 992px) {
+    .UserProfile form{
+        width: 45%;
+    }
+    .UserProfile button{
+        font-size: 15px;
+    }
+    .UserProfile input{
+        font-size: 15px;
+    }
+}

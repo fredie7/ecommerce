@@ -1,0 +1,131 @@
+.ProductDetails {
+    position: absolute;
+    top: 11.4vh;
+    width: 100vw;
+    /* padding: 2px; */
+    height: 85vh;
+    box-sizing: border-box;
+    padding: 0;
+}
+.Product {
+    height: 80vh;
+    overflow: scroll;
+    background-color: rgb(209, 206, 206);
+    /* max-width: 100%; */
+}
+
+.ProductImg {
+    height: 150px;
+    width: 100%;
+    background-color: red;
+}
+
+.ProductImg img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.ProductDescription {
+    width: 100%;
+    font-size: 22px;
+    color: black;
+    letter-spacing: 0.08em;
+}
+.Price p {
+    font-size: 27px;
+    color: black;
+}
+/* .Addtocart button{
+    cursor: pointer;
+    color: #ccc;
+    text-transform: uppercase;
+    background-color: rgb(92, 53, 92);
+    border-color: rgb(218, 211, 211);
+    border-width: 0.6ch;
+    border-radius: 3px;
+    font-size: 30px;
+    font-weight: lighter;
+    display: block;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    flex-grow: 1;
+    box-shadow: 5px 10px 20px rgb(161, 140, 141) inset;
+    outline: none;
+    position: fixed;
+    bottom: 0;
+} */
+.Addtocart {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: grey; */
+    /* background-color: red; */
+    position: fixed;
+    bottom: 5px;
+}
+.Addtocart button {
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 0.1em;
+    overflow: hidden;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-color: rgb(218, 211, 211);
+    border-width: 0.6ch;
+    border-radius: 3px;
+    font-size: 23px;
+    font-weight: lighter;
+    display: block;
+    padding: 15px 10px;
+    box-sizing: border-box;
+    flex-grow: 1;
+    box-shadow: 5px 10px 20px rgb(161, 140, 141) inset;
+    outline: none;
+    border-radius: 20px;
+    max-width: 100%;
+    align-self: center;
+    font-weight: bolder;
+    text-align: center;
+    /* position: fixed; */
+    /* bottom: 5px; */
+}
+
+@media screen and (min-width: 992px) {
+    .Addtocart buton {
+        text-align: center;
+        width: 90%;
+    }
+    .Product {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        max-width: 100%;
+    }
+    .ProductImg{
+        order: 1;
+        flex-basis: 24%;
+        height: 50vh;
+        margin-top: 3vh;
+        overflow: hidden;
+        /* background-color: red; */
+    }
+    .Price{
+        order: 3;
+        flex-basis: 14%;
+        /* display: flex; */
+    }
+    .Price p{
+        text-align: center;
+    }
+    /* .Price p{
+        font-size: 20px;
+    } */
+
+    .ProductDescription{
+        order: 2;
+        flex-basis: 60%;
+    }
+}
